@@ -1,0 +1,32 @@
+//
+//  SprinklerControllerPrefixHeader.pch
+//  Sprinkler Controller
+//
+//  Created by Nikhil Narang on 4/14/16.
+//  Copyright © 2016 Nikhil Narang. All rights reserved.
+//
+
+#ifndef SprinklerControllerPrefixHeader_pch
+#define SprinklerControllerPrefixHeader_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#define PORT 7777
+#define NUM_ZONES 8
+#define SOCKET_OPEN_SUCCESS @"socket_open_success"
+#define SOCKET_OPEN_FAIL @"socket_open_fail"
+#define ZONE_STATUS_RECEIVED @"zone_status_received"
+#define MESSAGES_FROM_SEVER_STD @"standard_report"
+#define MESSAGES_FROM_SEVER_USERS @"user_report"
+#define MESSAGES_FROM_SEVER_TEMP @"temperature_report"
+
+#endif /* SprinklerControllerPrefixHeader_pch */
